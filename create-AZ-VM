@@ -158,3 +158,11 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-03-01' = {
     }
   }
 }
+
+/*
+az deployment group create --resource-group 'MyVMResourceGroup' \
+--template-file deploy_win_vm.bicep \
+--parameters virtualMachineName='testvm' existingVirtualNetworkName='MyVNET' \
+existingVnetResourceGroup='MyVNET-rg' existingSubnetName='MySubnet' \
+adminUsername='david' adminPassword='abcd1234!'
+*/
