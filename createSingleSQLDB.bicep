@@ -32,8 +32,10 @@ resource sqlDB 'Microsoft.Sql/servers/databases@2022-05-01-preview' = {
     tier: 'Standard'
   }
 }
-#INSTRUCCIONES IMPORTANTES
-#1. Comando para ejecutar el template desde CLI
-            # az group create --name TEST-RG --location eastus
-            # az deployment group create --resource-group TEST-RG --template-file createSingleSQLDB.bicep --parameters administratorLogin=<admin-login>
-                  # Reemplaza <admin-login> por el nombre de usuario del administrador del servidor lógico de SQL.
+/*
+INSTRUCCIONES IMPORTANTES
+    Comando para ejecutar el template desde CLI
+            az group create --name TEST-RG --location eastus
+            az deployment group create --resource-group TEST-RG --template-file createSingleSQLDB.bicep --parameters administratorLogin=<admin-login>
+                  Reemplaza <admin-login> por el nombre de usuario del administrador del servidor lógico de SQL.
+*/
